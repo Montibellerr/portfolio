@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murilo Montibeller | Portfólio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f19;
+            color: #f5f7fa;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background:
+                radial-gradient(circle at top right, #1d4ed8 0, transparent 30%),
+                radial-gradient(circle at bottom left, #0f766e 0, transparent 25%),
+                #0b0f19;
+        }
+
+        .hero {
+            max-width: 800px;
+        }
+
+        .hero span {
+            color: #60a5fa;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            line-height: 1.05;
+            margin: 15px 0;
+        }
+
+        .hero h2 {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: #cbd5e1;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            max-width: 700px;
+            font-size: 1.05rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.2s;
+            display: inline-block;
+        }
+
+        .primary {
+            background: #2563eb;
+        }
+
+        .primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .secondary {
+            border: 1px solid #334155;
+            background: #111827;
+        }
+
+        .secondary:hover {
+            background: #1e293b;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 35px;
+        }
+
+        .section-title span {
+            color: #60a5fa;
+        }
+
+        .about {
+            color: #cbd5e1;
+            max-width: 850px;
+            font-size: 1.05rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .skill {
+            background: #111827;
+            border: 1px solid #263244;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: #cbd5e1;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            background: #111827;
+            border: 1px solid #263244;
+            border-radius: 12px;
+            padding: 25px;
+            transition: 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+
+        .project h3 {
+            font-size: 1.35rem;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .project a {
+            color: #60a5fa;
+            font-weight: bold;
+        }
+
+        .experience {
+            background: #0f172a;
+        }
+
+        .experience-box {
+            border-left: 3px solid #2563eb;
+            padding-left: 25px;
+            max-width: 850px;
+        }
+
+        .experience-box h3 {
+            font-size: 1.4rem;
+        }
+
+        .experience-box h4 {
+            color: #60a5fa;
+            margin: 5px 0 15px;
+        }
+
+        .experience-box p {
+            color: #94a3b8;
+        }
+
+        footer {
+            border-top: 1px solid #1e293b;
+            padding: 30px 0;
+            text-align: center;
+            color: #64748b;
+        }
+
+        .socials {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .socials a {
+            color: #60a5fa;
+        }
+
+        @media (max-width: 700px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="hero">
+            <span>Olá, eu sou</span>
+
+            <h1>Murilo Montibeller</h1>
+
+            <h2>Estudante de Ciência da Computação | TI & Desenvolvimento Web</h2>
+
+            <p>
+                Profissional de TI com experiência em suporte técnico,
+                infraestrutura, gerenciamento de dispositivos e ambiente
+                Microsoft. Também desenvolvo projetos web utilizando
+                HTML, CSS e JavaScript.
+            </p>
+
+            <div class="buttons">
+                <a href="#projetos" class="button primary">Ver meus projetos</a>
+                <a href="#contato" class="button secondary">Entre em contato</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Sobre <span>mim</span></h2>
+
+        <p class="about">
+            Atualmente atuo como Estagiário de TI na Bell Flavors & Fragrances
+            Brasil, trabalhando com suporte técnico e infraestrutura de TI.
+            Minha experiência inclui manutenção e configuração de computadores
+            e equipamentos corporativos, gerenciamento de usuários e
+            dispositivos, redes, VPN, servidores, conectividade, impressoras
+            e suporte a equipamentos de tecnologia.
+            <br><br>
+            Também possuo experiência com Microsoft Intune e Azure e trabalho
+            em conjunto com equipes de TI de outros países da empresa.
+            Paralelamente, desenvolvo projetos de desenvolvimento web e
+            continuo ampliando meus conhecimentos em programação.
+        </p>
+
+        <div class="skills">
+            <div class="skill">Suporte Técnico</div>
+            <div class="skill">Infraestrutura de TI</div>
+            <div class="skill">Microsoft Intune</div>
+            <div class="skill">Microsoft Azure</div>
+            <div class="skill">Redes</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+        </div>
+    </div>
+</section>
+
+<section class="experience">
+    <div class="container">
+        <h2 class="section-title">Experiência</h2>
+
+        <div class="experience-box">
+            <h3>Estagiário de TI</h3>
+            <h4>Bell Flavors & Fragrances Brasil</h4>
+
+            <p>
+                Atuação em suporte técnico e infraestrutura de TI, realizando
+                manutenção, configuração e gerenciamento de computadores e
+                equipamentos corporativos. Administração de usuários e
+                dispositivos por meio do Microsoft Intune e Azure, além de
+                suporte a servidores, redes, VPN e conectividade.
+                <br><br>
+                Diagnóstico e resolução de incidentes relacionados a sistemas,
+                equipamentos, impressoras e infraestrutura de rede. Atuação
+                em conjunto com equipes de TI de outros países da empresa
+                para suporte, diagnóstico e resolução de demandas técnicas.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="projetos">
+    <div class="container">
+        <h2 class="section-title">Meus <span>projetos</span></h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Star Steakhouse</h3>
+                <p>
+                    Website institucional com apresentação do restaurante
+                    e sistema visual de delivery.
+                </p>
+                <a href="https://montibellerr.github.io/projeto-steak-house/" target="_blank">
+                    Ver projeto →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>HATAKE Japanese Cuisine</h3>
+                <p>
+                    Website institucional desenvolvido para um restaurante
+                    de culinária japonesa.
+                </p>
+                <a href="https://montibellerr.github.io/projeto-hatake/" target="_blank">
+                    Ver projeto →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Pet Help</h3>
+                <p>
+                    Website institucional desenvolvido para uma clínica
+                    veterinária.
+                </p>
+                <a href="https://montibellerr.github.io/projeto-pet-help/" target="_blank">
+                    Ver projeto →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>My Pet Boutique</h3>
+                <p>
+                    Website institucional desenvolvido para um pet shop.
+                </p>
+                <a href="https://montibellerr.github.io/projeto-my-boutique/" target="_blank">
+                    Ver projeto →
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <div class="container">
+        <h2 class="section-title">Vamos <span>conversar?</span></h2>
+
+        <p class="about">
+            Estou aberto a oportunidades na área de Tecnologia da Informação,
+            especialmente em suporte, infraestrutura, cloud e desenvolvimento.
+        </p>
+
+        <div class="buttons">
+            <a href="mailto:murilobarbozamc@gmail.com" class="button primary">
+                Enviar e-mail
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" class="button secondary">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/Montibellerr" target="_blank" class="button secondary">
+                GitHub
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        © 2026 Murilo Montibeller — Portfólio
+    </div>
+</footer>
+
+</body>
+</html>
